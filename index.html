@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Title</title>
+	<meta name="description" content="">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<!-- Template Basic Images END -->
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)};function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n};function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+	<!-- Load Fonts CSS Start -->
+	<script>
+		loadCSS( "css/fonts.min.css?ver=1.0.0", false, "all" ); // Loading fonts, if the site is located in a subfolder
+		// loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" ); // Loading fonts, if the site is at the root
+	</script>
+	<!-- Load Fonts CSS END -->
+	<!-- Load Custom CSS Start -->
+	<script>loadCSS("css/main.min.css?ver=1.0.0", false, "all" );</script>
+	<!-- Load Custom CSS END -->
+</head>
+<body>
+	<!-- preloader --><script>var preload=document.createElement("div");preload.className="preloader",preload.innerHTML='<div class="preloader_text">РИТЦ</div><div class="spinner"></div>',document.body.appendChild(preload),window.addEventListener("load",function(){preload.className+=" preloader-fade",setTimeout(function(){preload.style.display="none"},600)});</script>
+      <style>.preloader{height:100%;width:100%;background:#fff;position:fixed;left:0;top:0;z-index:99999;-webkit-perspective:1600px;perspective:1600px;-webkit-perspective-origin:20% 50%;perspective-origin:20% 50%;-webkit-transition:.5s all;transition:.5s all;opacity:1}.preloader_text{font-family:Arial,Helvetica,sans-serif;font-size:1.2rem;font-weight:700;color:#3e2723;width:52px;height:67px;position:absolute;top:2.2rem;bottom:0;left:0;right:0;margin:auto;-webkit-animation:ico 9s infinite linear;animation:ico 9s infinite linear;-webkit-transform-style:preserve-3d;transform-style:preserve-3d}.spinner{width:80px;height:80px;border:2px solid #f3f3f3;border-top:3px solid #ff9800;-webkit-border-radius:100%;border-radius:100%;position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;-webkit-animation:spin 1s infinite linear;animation:spin 1s infinite linear}.preloader.preloader-fade{opacity:0}@-webkit-keyframes spin{from{-webkit-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes spin{from{-webkit-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@-webkit-keyframes ico{from{-webkit-transform:rotateY(0);transform:rotateY(0)}to{-webkit-transform:rotateY(360deg);transform:rotateY(360deg)}}@keyframes ico{from{-webkit-transform:rotateY(0);transform:rotateY(0)}to{-webkit-transform:rotateY(360deg);transform:rotateY(360deg)}}</style><!-- preloader END-->
+  <!-- header -->
+  <div class="container-fluid header">
+    <div class="container header_block">
+      <div class="row">
+        <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 mainlogo header_col">
+          <img src="img/index/logo_RITZ.png" alt="" class="mainlogo_img">
+        </div>
+        <!-- col-lg-10 -->
+        <div class="col-xs-8 col-sm-10 col-md-10 col-lg-10">
+          <!-- row -->
+          <div class="row">
+            <!-- col-lg-4 -->
+            <div class="col-xs-12 col-sm-5 col-sm-offset-1 col-md-offset-0 col-md-3 col-lg-4 header_col phones">
+              <!-- phone -->
+              <div class="row phone">
+                <div class="col-xs-4 col-sm-3 col-md-3 tel_wrap">
+                  <p class="contacts_text contacts_text-tel">тел.:</p>
+                </div>
+                <div class="col-xs-8 col-sm-9 col-md-9">
+                  <a href="tel:8 800 900 88 22" class="contacts_date contacts_date-link">8 800 900 88 22</a>
+                </div>
+              </div><!-- phone END -->
+              <!-- fax -->
+              <div class="row fax">
+                <div class="col-xs-3 col-sm-3 col-md-3">
+                  <p class="contacts_text">факс.:</p>
+                </div>
+                <div class="col-xs-9 col-sm-9 col-md-9">
+                  <a href="tel:8 800 900 88 22" class="contacts_date contacts_date-link">8 800 900 88 22</a>
+                </div>
+              </div><!-- fax END -->
+              <a href="#" class="contacts_link">Заявка на консультацию</a>                  
+            </div><!-- col-lg-4 END -->
+            <!-- col-lg-4 -->
+            <div class="col-md-5 col-lg-4 emails">
+              <div class="row">
+                <div class="col-xs-8 col-md-7">
+                  <p class="contacts_text">Общие вопросы:</p>
+                </div> 
+                <div class="col-xs-4 col-md-5">
+                  <a href="mailto:info@ritz.ru" class="contacts_date contacts_date-link">info@ritz.ru</a>
+                </div> 
+              </div>
+              <div class="row">
+                <div class="col-xs-8 col-md-7">
+                  <p class="contacts_text">Коммерческий отдел:</p>
+                </div> 
+                <div class="col-xs-4 col-md-5">
+                  <a href="mailto:sales@ritz.ru" class="contacts_date contacts_date-link">sales@ritz.ru</a>
+                </div> 
+              </div>
+              <div class="row">
+                <div class="col-xs-8 col-md-7">
+                  <p class="contacts_text">Отдел поставок:</p>
+                </div> 
+                <div class="col-xs-4 col-md-5">
+                  <a href="mailto:snab@ritz.ru" class="contacts_date contacts_date-link">snab@ritz.ru</a>
+                </div> 
+              </div>
+            </div><!-- col-lg-4 END-->
+            <!-- col-lg-4 -->
+            <div class="col-sm-6 col-md-4 col-lg-4 header_col adress">
+              <p class="contacts_text"><span class="contacts_date">г. Томск, Кузовлевский тракт 6/2</span></p>
+              <p class="contacts_text contacts_text-margin">Часы работы: <span class="contacts_text-worktime">Пн-Пт 9-18 ч. | Обед: 13-14</span></p>
+              <a href="#" class="contacts_link">Как проехать?</a>
+            </div><!-- col-lg-4 END -->
+          </div><!-- row END -->
+        </div><!-- col-lg-10 END -->          
+      </div>
+    </div>
+    <!-- navbar -->	
+    <nav class="navbar header_navbar">
+      <!-- navbar_block -->
+      <div class="container navbar_block">
+        <!-- row -->
+        <div class="row navbar_row">
+          <!-- col-lg-10 -->
+          <div class="col-sm-6 col-md-9 col-lg-10">
+            <!-- navbar-header -->
+            <div class="navbar-header navbar_menu">
+              <button class="navbar-toggle navbar_btn btn" data-toggle="collapse" data-target="#navbar_topmenu">меню</button>
+            </div><!-- navbar-header END -->
+            <!-- navbar_topmenu -->
+            <div class="collapse navbar-collapse navbar_topmenu" id="navbar_topmenu">
+              <!-- topmenu -->
+              <ul class="nav navbar-nav topmenu">
+                <!-- topmenu_product -->
+                <li class="topmenu_list">
+                  <a class="topmenu_link dropdown_title" href="#">
+                    <span class="dropdown_title-text">Продукция</span>
+                  </a>
+                </li><!-- topmenu_product END -->
+                <li class="topmenu_list"><a href="#" class="topmenu_link aboutcompany_link">О компании</a></li>
+                <li class="topmenu_list"><a href="#" class="topmenu_link guarantee_link">Гарантии</a></li>
+                <li class="topmenu_list"><a href="#" class="topmenu_link news_link">Новости</a></li>
+                <li class="topmenu_list"><a href="#" class="topmenu_link partners_link">Партнерам</a></li>
+                <li class="topmenu_list"><a href="#" class="topmenu_link faq_link">Faq</a></li>
+                <li class="topmenu_list"><a href="#" class="topmenu_link contact_link">Контакты</a></li>
+              </ul><!-- topmenu END -->
+            </div><!-- navbar_topmenu END -->
+          </div><!-- col-lg-10 END -->
+          <!-- col-lg-2 -->
+          <div class="col-sm-offset-2 col-sm-4 col-md-offset-0 col-md-3 col-lg-2 navbar_search-wrap">
+            <!-- navbar-form -->
+            <form class="navbar_search">
+              <input type="text" class="form-control navbar_input" placeholder="ПОИСК" value="">
+            </form><!-- navbar-form END -->
+          </div><!-- col-lg-2 END -->
+        </div><!-- row END -->
+      </div><!-- navbar_block END-->
+    </nav><!-- navbar END -->	
+  </div><!-- header END -->
+  <!-- company -->
+    <div class="container-fluid company">
+      <!-- company_banner -->
+      <div class="company_banner">
+        <div class="container banner_block">
+          <h1 class="company_title romb_title-large">Региональный<br><span class="company_title-narrow">Инновационно-</span><br><span class="company_title-small">Технологический Центр</span></h1>
+          <p class="company_desciption">уже более 20 лет <span class="company_desciption-small">занимается решением проблем восстановления и упрочнения деталей машин и механизмов</span></p>
+        </div>
+      </div><!-- company_banner END -->
+      <!-- company_aboutcompany -->
+      <div class="container company_aboutcompany">
+        <div class="row company_topwrap">
+          <div class="col-md-12 col-lg-3">
+            <p class="section_count">01</p>
+          </div>
+          <div class="col-md-12 col-lg-7">
+            <h2 class="section_title aboutcompany_title">Компания</h2>
+            <div class="company_box">
+              <h3 class="box_title">Региональный Инновационно-Технологический</h3>
+              <p class="box_text">Центр уже более 20 лет занимается решением проблем восстановления и упрочнения деталей машин и механизмов.</p>
+            </div>
+          </div>
+        </div> 
+      </div><!-- company_aboutcompany END -->
+      <!-- aboutcompany_wrap -->
+      <div class="container-fluid bg_gear-wrap aboutcompany_bottom-wrap">
+        <!-- aboutcompany_bottom -->
+        <div class="container bg_gear-right aboutcompany_bottom">
+          <!-- row -->
+          <div class="row">
+            <div class="col-sm-2 col-md-1 col-lg-1 aboutcompany_tab aboutcompany_col">
+              <img src="img/company/c_icon_factory.png" alt="" class="tab_img">
+            </div>
+            <div class="col-sm-10 col-md-10 col-lg-10 aboutcompany_description aboutcompany_col">
+              <p class="aboutcompany_text">Сегодня мы изготавливаем высокопроизводительное оборудование для восстановления изношенных деталей железнодорожного транспорта и оборудование для механической обработки уже восстановленных деталей.</p>
+              <p class="aboutcompany_text">Возможности нашего предприятия позволяют изготавливать любое нестандартное оборудование по Вашему заказу.</p>
+              <p class="aboutcompany_text">Возможности литейного цеха нашего предприятия позволяют изготавливать износостойкие детали для асфальтобетонных и кирпичных заводов, для дорожных служб, иных предприятий и отраслей народного хозяйства.</p>
+            </div>
+          </div><!-- row END -->
+        </div><!-- aboutcompany_bottom END -->
+      </div><!-- aboutcompany_wrap END -->
+      <!-- company_executives -->
+      <div class="container company_executives">
+        <!-- executives_top -->
+        <div class="row company_topwrap executives_top">
+          <div class="col-xs-12 col-md-12 col-lg-3">
+            <p class="section_count">02</p>
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10 col-lg-7">
+            <h2 class="section_title executives_title">Руководство</h2>
+            <div class="company_box">
+              <h3 class="box_title">Центр располагает необходимыми</h3>
+              <p class="box_text">производственными площадями, хорошим литейным участком, станочным оборудованием, квалифицированными кадрами.</p>
+            </div>
+          </div>
+          <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-3 col-md-2">
+            <div class="slider_control-executives">
+              <button class="btn control_next-executives"><img class="slider_img-left" src="img/company/slider_left.png" alt=""></button>
+              <button class="btn control_prev-executives"><img class="slider_img-right" src="img/company/slider_right.png" alt=""></button>
+            </div>
+          </div>
+        </div><!-- executives_top END -->
+        <!-- slider_executives -->
+        <div class="slider_executives-wrap">
+          <!-- row -->
+          <div class="row slider_executives">
+            <div class="col-xs-12 col-sm-4 executive_profile-wrap">
+              <div class="executive_profile">
+                <img src="img/company/c_chief1.png" alt="" class="profile_img">
+                <p class="profile_name">Иванов Иван Иванович</p>
+                <p class="profile_position">Самый главный на заводе</p>
+                <p class="profile_phone">8 (3822) 44-55-66</p>
+                <p class="profile_email">mailgod@ritz.ru</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 executive_profile-wrap">
+              <div class="executive_profile">
+                <img src="img/company/c_chief2.png" alt="" class="profile_img">
+                <p class="profile_name">Псков Никита Андреевич</p>
+                <p class="profile_position">Маркетолог</p>
+                <p class="profile_phone">8 (3822) 12-16-68</p>
+                <p class="profile_email">mail@ritz.ru</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 executive_profile-wrap">
+              <div class="executive_profile">
+                <img src="img/company/c_chief3.png" alt="" class="profile_img">
+                <p class="profile_name">Прокуров Илья Викторович</p>
+                <p class="profile_position">Бухгалтер</p>
+                <p class="profile_phone">8 (3822) 17-19-64</p>
+                <p class="profile_email">mailgod@ritz.ru</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 executive_profile-wrap">
+              <div class="executive_profile">
+                <img src="img/company/c_chief1.png" alt="" class="profile_img">
+                <p class="profile_name">Иванов Иван Иванович</p>
+                <p class="profile_position">Самый главный на заводе</p>
+                <p class="profile_phone">8 (3822) 44-55-66</p>
+                <p class="profile_email">mailgod@ritz.ru</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 executive_profile-wrap">
+              <div class="executive_profile">
+                <img src="img/company/c_chief2.png" alt="" class="profile_img">
+                <p class="profile_name">Псков Никита Андреевич</p>
+                <p class="profile_position">Маркетолог</p>
+                <p class="profile_phone">8 (3822) 12-16-68</p>
+                <p class="profile_email">mail@ritz.ru</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 executive_profile-wrap">
+              <div class="executive_profile">
+                <img src="img/company/c_chief3.png" alt="" class="profile_img">
+                <p class="profile_name">Прокуров Илья Викторович</p>
+                <p class="profile_position">Бухгалтер</p>
+                <p class="profile_phone">8 (3822) 17-19-64</p>
+                <p class="profile_email">mailgod@ritz.ru</p>
+              </div>
+            </div>
+          </div><!-- row END -->
+        </div><!-- slider_executives END --> 
+      </div><!-- company_executives END -->
+      <!-- company_history -->
+      <div class="container-fluid company_history bg_gear-wrap">
+        <!-- history_block -->
+        <div class="container history_block bg_gear-left">
+          <!-- company_topwrap -->
+          <div class="row company_topwrap">
+            <div class="col-md-12 col-lg-3">
+              <p class="section_count">03</p>
+            </div>
+            <div class="col-md-12 col-lg-7">
+              <h2 class="section_title history_title">История</h2>
+              <div class="company_box">
+                <h3 class="box_title">Компания основана очень давно</h3>
+                <p class="box_text">и всё время работает крайне исправно. Клиентов много, они счастливы и мы счастливы, ведь так мы делаем мир лучше!</p>
+              </div>
+            </div>
+          </div><!-- company_topwrap END -->
+          <!-- row -->
+          <div class="row">
+            <!-- timeline control -->
+            <div class="col-md-1 timeline_control-left">
+              <button class="btn control_next-timeline">
+                <img class="slider_left-timeline" src="img/company/slider_left.png" alt="">
+              </button>
+            </div><!-- timeline control END -->
+            <!-- history_timeline -->
+            <div class="col-md-10 history_timeline">
+              <ul class="timeline_list">
+                <li class="history_timeline-li timeline_active" data-date="1984">1984</li>
+                <li class="history_timeline-li" data-date="1991">1991</li>
+                <li class="history_timeline-li" data-date="2001">2001</li>
+                <li class="history_timeline-li" data-date="2005">2005</li>
+                <li class="history_timeline-li" data-date="2008">2008</li>
+                <li class="history_timeline-li" data-date="2011">2011</li>
+                <li class="history_timeline-li" data-date="2017">2017</li>
+                <li class="history_timeline-li" data-date="2018">2018</li>
+                <li class="history_timeline-li" data-date="2019">2019</li>
+                <li class="history_timeline-li" data-date="2020">2020</li>
+                <li class="history_timeline-li" data-date="2021">2021</li>
+                <li class="history_timeline-li" data-date="2022">2022</li>
+              </ul>
+            </div><!-- history_timeline END -->
+            <!-- timeline_contorl-mobile -->        
+            <div class="col-xs-4 col-sm-3 col-md-1 timeline_control-mobile">
+              <button class="btn control_prev-timeline">
+                <img class="slider_right-timeline" src="img/company/slider_right.png" alt="">
+              </button>
+            </div><!-- timeline_contorl-mobile END -->
+            <!-- timeline_period -->
+            <div class="col-xs-8 col-sm-9 col-md-6 timeline_period">
+              <p class="period"><span class="period_start"></span> - <span class="period_end">1984</span></p>
+            </div><!-- timeline_period END -->
+            <!-- timeline control END -->
+          </div><!-- row END -->
+        </div><!-- history_block END -->
+      </div><!-- company_history END -->
+      <!-- timeline_wrap -->
+      <div class="container-fluid timeline_wrap">
+        <!-- timeline_block -->
+        <div class="container timeline_block">
+          <!-- timeline_text-wrap -->
+          <div class="row timeline_text-wrap">
+            <div class="col-sm-10 col-md-offset-1 col-md-10">
+              <p class="timeline_text timeline_text-active" data-date="1984">Создание участков "под ключ" (изготовление и поставка оборудования, расходуемых материалов; монтаж, наладка и запуск оборудования, 
+                с гарантийным и послегарантийным обслуживанием) обучение персонала с передачей высокоэффективных ресурсосберегающих технологий восстановления изношенных
+                деталей автоматической наплавкой под слоем флюса с последующей механической обработкой. Все виды механической обработки металла: токарная, фрезерная, зубонарезная, 
+                расточная, шлифовальная и другие виды обработки. Изготовление агрегатов, механизмов и приспособлений. Изготовление и ремонт червячных и цилиндрических редукторов.
+                Изготавливаем сварочные автоматы для сварки и наплавки Восстановление наплавкой, в том числе износостойкой, валов, осей, катков и других тел вращения с последующей
+              </p>
+            </div>
+            <div class="col-sm-10 col-md-offset-1 col-md-10">
+              <p class="timeline_text" data-date="1991">участков "под ключ" (изготовление и поставка оборудования, расходуемых материалов; монтаж, наладка и запуск оборудования, 
+                с гарантийным и послегарантийным обслуживанием) обучение персонала с передачей высокоэффективных ресурсосберегающих технологий восстановления изношенных
+                деталей автоматической наплавкой под слоем флюса с последующей механической обработкой. Все виды механической обработки металла: токарная, фрезерная, зубонарезная, 
+                расточная, шлифовальная и другие виды обработки. Изготовление агрегатов, механизмов и приспособлений. Изготовление и ремонт червячных и цилиндрических редукторов.
+                Изготавливаем сварочные автоматы для сварки и наплавки Восстановление наплавкой, в том числе износостойкой, валов, осей, катков и других тел вращения с последующей
+              </p>
+            </div>
+            <div class="col-sm-10 col-md-offset-1 col-md-10" >
+              <p class="timeline_text" data-date="2001">Создание участков "под ключ" (изготовление и поставка оборудования, расходуемых материалов; монтаж, наладка и запуск оборудования, 
+                с гарантийным и послегарантийным обслуживанием) обучение персонала с передачей высокоэффективных ресурсосберегающих технологий восстановления изношенных
+                деталей автоматической наплавкой под слоем флюса с последующей механической обработкой. Все виды механической обработки металла: токарная, фрезерная, зубонарезная, 
+                расточная, шлифовальная и другие виды обработки. Изготовление агрегатов, механизмов и приспособлений. Изготовление и ремонт червячных и цилиндрических редукторов.
+                Изготавливаем сварочные автоматы для сварки и наплавки Восстановление наплавкой, в том числе износостойкой, валов, осей, катков и других тел вращения с последующей
+              </p>
+            </div>
+            <div class="col-sm-10 col-md-offset-1 col-md-10">
+              <p class="timeline_text" data-date="2005">участков "под ключ" (изготовление и поставка оборудования, расходуемых материалов; монтаж, наладка и запуск оборудования, 
+                с гарантийным и послегарантийным обслуживанием) обучение персонала с передачей высокоэффективных ресурсосберегающих технологий восстановления изношенных
+                деталей автоматической наплавкой под слоем флюса с последующей механической обработкой. Все виды механической обработки металла: токарная, фрезерная, зубонарезная, 
+                расточная, шлифовальная и другие виды обработки. Изготовление агрегатов, механизмов и приспособлений. Изготовление и ремонт червячных и цилиндрических редукторов.
+                Изготавливаем сварочные автоматы для сварки и наплавки Восстановление наплавкой, в том числе износостойкой, валов, осей, катков и других тел вращения с последующей
+              </p>
+            </div>
+            <div class="col-sm-10 col-md-offset-1 col-md-10">
+              <p class="timeline_text" data-date="2008">Создание участков "под ключ" (изготовление и поставка оборудования, расходуемых материалов; монтаж, наладка и запуск оборудования, 
+                с гарантийным и послегарантийным обслуживанием) обучение персонала с передачей высокоэффективных ресурсосберегающих технологий восстановления изношенных
+                деталей автоматической наплавкой под слоем флюса с последующей механической обработкой. Все виды механической обработки металла: токарная, фрезерная, зубонарезная, 
+                расточная, шлифовальная и другие виды обработки. Изготовление агрегатов, механизмов и приспособлений. Изготовление и ремонт червячных и цилиндрических редукторов.
+                Изготавливаем сварочные автоматы для сварки и наплавки Восстановление наплавкой, в том числе износостойкой, валов, осей, катков и других тел вращения с последующей
+              </p>
+            </div>
+            <div class="col-sm-10 col-md-offset-1 col-md-10">
+              <p class="timeline_text" data-date="2011">участков "под ключ" (изготовление и поставка оборудования, расходуемых материалов; монтаж, наладка и запуск оборудования, 
+                с гарантийным и послегарантийным обслуживанием) обучение персонала с передачей высокоэффективных ресурсосберегающих технологий восстановления изношенных
+                деталей автоматической наплавкой под слоем флюса с последующей механической обработкой. Все виды механической обработки металла: токарная, фрезерная, зубонарезная, 
+                расточная, шлифовальная и другие виды обработки. Изготовление агрегатов, механизмов и приспособлений. Изготовление и ремонт червячных и цилиндрических редукторов.
+                Изготавливаем сварочные автоматы для сварки и наплавки Восстановление наплавкой, в том числе износостойкой, валов, осей, катков и других тел вращения с последующей
+              </p>
+            </div>
+            <div class="col-sm-10 col-md-offset-1 col-md-10">
+              <p class="timeline_text" data-date="2017"> расходуемых материалов; монтаж, наладка и запуск оборудования, 
+                с гарантийным и послегарантийным обслуживанием) обучение персонала с передачей высокоэффективных ресурсосберегающих технологий восстановления изношенных
+                деталей автоматической наплавкой под слоем флюса с последующей механической обработкой. Все виды механической обработки металла: токарная, фрезерная, зубонарезная, 
+                расточная, шлифовальная и другие виды обработки. Изготовление агрегатов, механизмов и приспособлений. Изготовление и ремонт червячных и цилиндрических редукторов.
+                Изготавливаем сварочные автоматы для сварки и наплавки Восстановление наплавкой, в том числе износостойкой, валов, осей, катков и других тел вращения с последующей
+              </p>
+            </div>
+            <div class="col-sm-10 col-md-offset-1 col-md-10">
+              <p class="timeline_text" data-date="2018">Изготовление агрегатов, механизмов и приспособлений. Изготовление и ремонт червячных и цилиндрических редукторов.
+                Изготавливаем сварочные автоматы для сварки и наплавки Восстановление наплавкой, в том числе износостойкой, валов, осей, катков и других тел вращения с последующей
+              </p>
+            </div>
+            <div class="col-sm-10 col-md-offset-1 col-md-10">
+              <p class="timeline_text" data-date="2019">расходуемых материалов; монтаж, наладка и запуск оборудования, 
+                с гарантийным и послегарантийным обслуживанием) обучение персонала с передачей высокоэффективных ресурсосберегающих технологий восстановления изношенных
+                деталей автоматической наплавкой под слоем флюса с последующей механической обработкой. Все виды механической обработки металла: токарная, фрезерная, зубонарезная, 
+                расточная, шлифовальная и другие виды обработки. Изготовление агрегатов, механизмов и приспособлений. Изготовление и ремонт червячных и цилиндрических редукторов.
+                Изготавливаем сварочные автоматы для сварки и наплавки Восстановление наплавкой, в том числе износостойкой, валов, осей, катков и других тел вращения с последующей
+              </p>
+            </div>
+            <div class="col-sm-10 col-md-offset-1 col-md-10">
+              <p class="timeline_text" data-date="2020">монтаж, наладка и запуск оборудования, 
+                с гарантийным и послегарантийным обслуживанием) обучение персонала с передачей высокоэффективных ресурсосберегающих технологий восстановления изношенных
+                деталей автоматической наплавкой под слоем флюса с последующей механической обработкой. Все виды механической обработки металла: токарная, фрезерная, зубонарезная, 
+                расточная, шлифовальная и другие виды обработки. Изготовление агрегатов, механизмов и приспособлений. Изготовление и ремонт червячных и цилиндрических редукторов.
+                Изготавливаем сварочные автоматы для сварки и наплавки Восстановление наплавкой, в том числе износостойкой, валов, осей, катков и других тел вращения с последующей
+              </p>
+            </div>
+            <div class="col-sm-10 col-md-offset-1 col-md-10">
+              <p class="timeline_text" data-date="2021">Создание участков "под ключ" (изготовление и поставка оборудования, расходуемых материалов; монтаж, наладка и запуск оборудования, 
+                с гарантийным и послегарантийным обслуживанием) обучение персонала с передачей высокоэффективных ресурсосберегающих технологий восстановления изношенных
+                деталей автоматической наплавкой под слоем флюса с последующей механической обработкой. Все виды механической обработки металла: токарная, фрезерная, зубонарезная, 
+                расточная, шлифовальная и другие виды обработки. Изготовление агрегатов, механизмов и приспособлений. Изготовление и ремонт червячных и цилиндрических редукторов.
+                Изготавливаем сварочные автоматы для сварки и наплавки Восстановление наплавкой, в том числе износостойкой, валов, осей, катков и других тел вращения с последующей
+              </p>
+            </div>
+            <div class="col-sm-10 col-md-offset-1 col-md-10">
+              <p class="timeline_text" data-date="2022">с гарантийным и послегарантийным обслуживанием) обучение персонала с передачей высокоэффективных ресурсосберегающих технологий восстановления изношенных
+                деталей автоматической наплавкой под слоем флюса с последующей механической обработкой. Все виды механической обработки металла: токарная, фрезерная, зубонарезная, 
+                расточная, шлифовальная и другие виды обработки. Изготовление агрегатов, механизмов и приспособлений. Изготовление и ремонт червячных и цилиндрических редукторов.
+                Изготавливаем сварочные автоматы для сварки и наплавки Восстановление наплавкой, в том числе износостойкой, валов, осей, катков и других тел вращения с последующей
+              </p>
+            </div>
+          </div><!-- timeline_text-wrap END -->
+        </div><!--timeline_block END -->
+      </div><!-- timeline_wrap END -->      
+      <!-- company_directions -->
+      <div class="container company_directions">
+        <div class="row company_topwrap directions_top">
+          <div class="col-md-12 col-lg-3">
+            <p class="section_count">04</p>
+          </div>
+          <div class="col-md-12 col-lg-7">
+            <h2 class="section_title">Направления</h2>
+          </div>
+        </div>
+        <!-- directions_list -->
+        <div class="row directions_list">
+          <!-- direction_thumbnail -->
+          <div class="col-xs-12 col-sm-6 col-md-4 direction_thumbnail">
+            <a href="" class="row thumbnail_wrap thumbnail_wrap-man">
+              <div class="col-xs-offset-3 col-xs-9 direction_text-wrap">
+                <p class="direction_text">Создание участков "под ключ" и обучение персонала с передачей высокоэффективных ресурсосберегающих технологий восстановления изношенных деталей</p>
+              </div>
+            </a>
+          </div><!-- direction_thumbnail END -->
+          <!-- direction_thumbnail -->
+          <div class="col-xs-12 col-sm-6 col-md-4 direction_thumbnail ">
+            <a href="" class="row thumbnail_wrap thumbnail_wrap-key">
+              <div class="col-xs-offset-3 col-xs-9 direction_text-wrap">
+                <p class="direction_text">Все виды механической обработки металла: токарная, фрезерная, зубонарезная, расточная, шлифовальная и другие виды обработки.</p>
+              </div>
+            </a>
+          </div><!-- direction_thumbnail END -->
+          <!-- direction_thumbnail -->
+          <div class="col-xs-12 col-sm-6 col-md-4 direction_thumbnail ">
+            <a href="" class="row thumbnail_wrap thumbnail_wrap-robot">
+              <div class="col-xs-offset-3 col-xs-9 direction_text-wrap">
+                <p class="direction_text">Изготовление и внедрение нестандартного оборудования. Изготовление агрегатов, механизмов и приспособлений.</p>
+              </div>
+            </a>
+          </div><!-- direction_thumbnail END -->
+          <!-- direction_thumbnail -->
+          <div class="col-xs-12 col-sm-6 col-md-4 direction_thumbnail ">
+            <a href="" class="row thumbnail_wrap thumbnail_wrap-instruments">
+              <div class="col-xs-offset-3 col-xs-9 direction_text-wrap">
+                <p class="direction_text">Изготовление и ремонт червячных и цилиндрических редукторов.</p>
+              </div>
+            </a>
+          </div><!-- direction_thumbnail END -->
+          <!-- direction_thumbnail -->
+          <div class="col-xs-12 col-sm-6 col-md-4 direction_thumbnail ">
+            <a href="" class="row thumbnail_wrap thumbnail_wrap-manipulator">
+              <div class="col-xs-offset-3 col-xs-9 direction_text-wrap">
+                <p class="direction_text">Восстановление наплавкой, в том числе износостойкой, валов, осей, катков и других тел вращения с последующей механической обработкой.</p>
+              </div>
+            </a>
+          </div><!-- direction_thumbnail END -->
+          <!-- direction_thumbnail -->
+          <div class="col-xs-12 col-sm-6 col-md-4 direction_thumbnail ">
+            <a href="" class="row thumbnail_wrap thumbnail_wrap-detail">
+              <div class="col-xs-offset-3 col-xs-9">
+                <p class="direction_text">Изготавливаем сварочные автоматы для сварки и наплавки в среде углекислого газа и под флюсом.</p>
+              </div>
+            </a>
+          </div><!-- direction_thumbnail END -->
+        </div><!-- directions_list END -->
+      </div><!-- company_directions END -->      
+      <!-- company_projects -->
+      <div class="container-fluid company_projects">
+        <!-- projects_block -->
+        <div class="container projects_block">
+          <!-- company_topwrap -->
+          <div class="row company_topwrap projects_top">
+            <div class="col-xs-12 col-md-12 col-lg-3">
+              <p class="section_count">05</p>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-md-10 col-lg-7">
+              <h2 class="section_title">Проекты</h2>
+              <div class="company_box projects_box">
+                <h3 class="box_title">Большая часть собственных разработок</h3>
+                <p class="box_text">защищена патентами, зарегистрированы товарные знаки</p>
+              </div>
+            </div>
+            <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-3 col-md-2 slider_control-projects">
+              <button class="btn control_next-projects"><img class="slider_img-left" src="img/company/slider_left.png" alt=""></button>
+              <button class="btn control_prev-projects"><img class="slider_img-right" src="img/company/slider_right.png" alt=""></button>
+            </div>
+          </div><!-- company_topwrap END -->
+          <!-- projects_gallery -->
+          <div class="row slider_projects projects_gallery-company">
+            <div class="col-xs-12 col-sm-6 col-md-4 gallery_collumn gallery_col">
+              <a href="#" class="gallery_link">
+                <img src="img/index/projects_1.jpg" alt="" class="project_img">
+                <div class="project_link">
+                  <p class="project_description">Индивидуальный тепловой пункт (Владивосток)<i class="icon_arrow-link"></i></p>
+                </div>	
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 gallery_collumn gallery_col">
+              <a href="#" class="gallery_link">
+                <img src="img/index/projects_2.jpg" alt="" class="project_img">
+                <div class="project_link">
+                  <p href="#" class="project_description">Стальной резервуар для хранения нефтепродуктов<i class="icon_arrow-link"></i></p>
+                </div>
+              </a>	
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 gallery_collumn gallery_col">
+              <a href="#" class="gallery_link">
+                <img src="img/index/projects_4.jpg" alt="" class="project_img">
+                <div class="project_link">
+                  <p href="#" class="project_description">Стальной резервуар для хранения нефтепродуктов<i class="icon_arrow-link"></i></p>
+                </div>	
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 gallery_collumn gallery_col">
+              <a href="#" class="gallery_link">
+                <img src="img/index/projects_5.jpg" alt="" class="project_img">
+                <div class="project_link">
+                  <p href="#" class="project_description">Каркасная котельная<i class="icon_arrow-link"></i></p>
+                </div>	
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 gallery_collumn gallery_col">
+              <a href="#" class="gallery_link">
+                <img src="img/index/projects_6.jpg" alt="" class="project_img">
+                <div class="project_link">
+                  <p href="#" class="project_description">Стальной резервуар для хранения питьевой воды<i class="icon_arrow-link"></i></p>
+                </div>
+              </a>	
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 gallery_collumn gallery_col">
+              <a href="#" class="gallery_link">
+                <img src="img/index/projects_1.jpg" alt="" class="project_img">
+                <div class="project_link">
+                  <p href="#" class="project_description">Индивидуальный тепловой пункт (Сыктывкар)<i class="icon_arrow-link"></i></p>
+                </div>	
+              </a>
+            </div>
+          </div><!-- projects_gallery END -->
+        </div><!-- projects_block END -->
+      </div><!-- company_projects END -->
+      <!-- company_patents -->
+      <div class="container-fluid company_patents">
+        <!-- patents_block -->
+        <div class="container patents_block">
+          <!-- company_topwrap -->
+          <div class="row company_topwrap patents_topwrap">
+            <div class="col-xs-12 col-md-12 col-lg-3">
+              <p class="section_count">06</p>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-md-10 col-lg-7">
+              <h2 class="section_title patents_title">Патенты</h2>
+              <div class="company_box">
+                <h3 class="box_title">Патентов у нас невероятное множество</h3>
+                <p class="box_text">На станки патент имеется, на работников, на всё, всё производство. Даже можно сказать, что сложно найти на нашем заводе что-либо не имеющее этого самого патента.</p>
+              </div>
+            </div>
+            <!-- slider_control-patents -->
+            <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-3 col-md-2 slider_control-patents">
+              <button class="btn control_next-patents"><img class="slider_img-left" src="img/company/slider_left.png" alt=""></button>
+              <button class="btn control_prev-patents"><img class="slider_img-right" src="img/company/slider_right.png" alt=""></button>
+            </div><!-- slider_control-patents END -->
+          </div><!-- company_topwrap END -->
+          <!-- slider_patents -->
+          <div class="slider_patents-wrap">
+            <!-- row -->
+            <div class="row slider_patents">
+              <div class="col-lg-3 patents_img-wrap">
+                <a href="img/company/c_patents_1920_1-lg.jpg" class="patents_img-link" data-fancybox="patents">
+                  <img src="img/company/c_patents_1920_1.jpg" alt="" class="patents_img">
+                </a>
+              </div>
+              <div class="col-lg-3 patents_img-wrap">
+                <a href="img/company/c_response_1920_1-lg.jpg" class="patents_img-link" data-fancybox="patents">
+                  <img src="img/company/c_response_1920_1.jpg" alt="" class="patents_img">
+                </a>
+              </div>
+              <div class="col-lg-3 patents_img-wrap">
+                <a href="img/company/c_patents_1920_2-lg.jpg" class="patents_img-link" data-fancybox="patents">
+                  <img src="img/company/c_patents_1920_1.jpg" alt="" class="patents_img">
+                </a>
+              </div>
+              <div class="col-lg-3 patents_img-wrap">
+                <a href="img/company/c_response_1920_2-lg.jpg" class="patents_img-link" data-fancybox="patents">
+                  <img src="img/company/c_response_1920_1.jpg" alt="" class="patents_img">
+                </a>
+              </div>
+              <div class="col-lg-3 patents_img-wrap">
+                <a href="img/company/c_patents_1920_3-lg.jpg" class="patents_img-link" data-fancybox="patents">
+                  <img src="img/company/c_patents_1920_1.jpg" alt="" class="patents_img">
+                </a>
+              </div>
+              <div class="col-lg-3 patents_img-wrap">
+                <a href="img/company/c_response_1920_3-lg.jpg" class="patents_img-link" data-fancybox="patents">
+                  <img src="img/company/c_response_1920_1.jpg" alt="" class="patents_img">
+                </a>
+              </div>
+              <div class="col-lg-3 patents_img-wrap">
+                <a href="img/company/c_patents_1920_4-lg.jpg" class="patents_img-link" data-fancybox="patents">
+                  <img src="img/company/c_patents_1920_1.jpg" alt="" class="patents_img">
+                </a>
+              </div>
+              <div class="col-lg-3 patents_img-wrap">
+                <a href="img/company/c_response_1920_4-lg.jpg" class="patents_img-link" data-fancybox="patents">
+                  <img src="img/company/c_response_1920_1.jpg" alt="" class="patents_img">
+                </a>
+              </div>
+            </div><!-- row END -->
+          </div><!-- slider_patents END -->   
+        </div><!-- patents_block END -->
+      </div><!-- company_patents END -->
+      <!-- company_response -->
+      <div class="container-fluid bg_gear-wrap company_response">
+        <!-- container -->
+        <div class="container bg_gear resposnse_block">
+          <!-- row -->
+          <div class="row company_topwrap resposnse_top">
+            <div class="col-xs-12 col-md-12 col-lg-3">
+              <p class="section_count">07</p>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-md-10 col-lg-7">
+              <h2 class="section_title response_maintitle">Отзывы</h2>
+              <div class="company_box">
+                <h3 class="box_title">Отзывы исключительно положительные</h3>
+                <p class="box_text">Ведь когда компания так прекрасно справляется со своей работой, иначе быть и не может. Наши клиенты счастливые люди, посмотрите сами, что они о нас пишут на бумаге.</p>
+              </div>
+            </div>
+          </div><!-- row END -->
+          <!-- row -->
+          <div class="row resposnse_body">
+            <div class="col-sm-3 col-md-3 col-lg-3 response_img-wrap">
+              <a href="img/company/c_response_1920_1-lg.jpg" class="response_img-link" data-fancybox="images">
+                <img src="img/company/c_response_1920_1.jpg" alt="" class="response_img">
+              </a>
+              <a href="img/company/c_patents_1920_1-lg.jpg" class="response_img-link" data-fancybox="images">
+                <img src="img/company/c_patents_1920_1.jpg" alt="" class="response_img">
+              </a>
+              <a href="img/company/c_response_1920_2-lg.jpg" class="response_img-link" data-fancybox="images">
+                <img src="img/company/c_response_1920_1.jpg" alt="" class="response_img">
+              </a>
+              <a href="img/company/c_patents_1920_2-lg.jpg" class="response_img-link" data-fancybox="images">
+                <img src="img/company/c_patents_1920_1.jpg" alt="" class="response_img">
+              </a>
+            </div>
+            <div class="col-sm-9 col-md-8 col-lg-8 slider_response-wrap">
+              <div class="slider_response">
+                <div class="response_item">
+                  <h4 class="response_title">Xолдинговая компания новотранс</h4>
+                  <p class="response_date">29.06.2015</p>
+                  <p class="response_text">Центр располагает необходимыми производственными площадями, хорошим литейным участком, станочным оборудованием, квалифицированными кадрами и многолетним разносторонним опытом в области инноваций и разнообразных защитных и упрочняющих покрытий. Большая часть собственных разработок защищена патентами, зарегистрированы товарные знаки.</p>
+                </div>
+                <div class="response_item">
+                  <h4 class="response_title">компания трансново</h4>
+                  <p class="response_date">15.08.2015</p>
+                  <p class="response_text">Большая часть собственных разработок защищена патентами, зарегистрированы товарные знаки. Центр располагает необходимыми производственными площадями, хорошим литейным участком, станочным оборудованием, квалифицированными кадрами и многолетним разносторонним опытом в области инноваций и разнообразных защитных и упрочняющих покрытий.</p>
+                </div>
+                <div class="response_item">
+                  <h4 class="response_title">Xолдинговая компания супертранс</h4>
+                  <p class="response_date">04.03.2016</p>
+                  <p class="response_text">Центр располагает необходимыми производственными площадями, хорошим литейным участком, станочным оборудованием, квалифицированными кадрами и многолетним разносторонним опытом в области инноваций и разнообразных защитных и упрочняющих покрытий. Большая часть собственных разработок защищена патентами, зарегистрированы товарные знаки.</p>
+                </div>
+                <div class="response_item">
+                  <h4 class="response_title">компания гигатранс</h4>
+                  <p class="response_date">17.05.2016</p>
+                  <p class="response_text">Большая часть собственных разработок защищена патентами, зарегистрированы товарные знаки. Центр располагает необходимыми производственными площадями, хорошим литейным участком, станочным оборудованием, квалифицированными кадрами и многолетним разносторонним опытом в области инноваций и разнообразных защитных и упрочняющих покрытий.</p>
+                </div>
+              </div>
+              <div class="col-xs-8 col-xs-offset-2 col-sm-3 col-sm-offset-0 slider_control-response">
+                <button class="btn control_next-response"><img class="slider_img-leftresponse" src="img/company/slider_left.png" alt=""></button>
+                <button class="btn control_prev-response"><img class="slider_img-rightresponse" src="img/company/slider_right.png" alt=""></button>
+              </div>
+            </div>
+          </div><!-- row END -->        
+        </div><!-- container END -->
+      </div><!-- company_response END -->
+    </div><!-- company END -->
+  <!-- footer -->
+	<footer class="container-fluid footer">
+		<!-- navbar_footer -->
+		<nav class="navbar navbar_footer">
+			<!-- footer_block -->
+			<div class="container footer_block">
+				<!-- footer_row -->
+				<div class="row footer_row">
+					<!-- footerlogo -->
+					<div class="col-md-2 footerlogo">
+						<img src="img/index/footerlogo_RITZ.png" alt="" class="footerlogo_img">
+					</div><!-- footerlogo END -->
+					<!-- footer_body -->
+					<div class="col-ms-12 col-md-10 footer_body">
+						<!-- row -->
+						<div class="row">
+							<!-- footernavbar -->
+							<div class="col-sm-12 footernavbar">
+								<ul class="footermenu">
+									<li class="footermenu_list"><a class="footermenu_link" href="#">О компании</a></li>
+									<li class="footermenu_list"><a class="footermenu_link" href="#">Продукция</a></li>
+									<li class="footermenu_list"><a class="footermenu_link" href="#">Проекты</a></li>
+									<li class="footermenu_list"><a class="footermenu_link" href="#">Услуги</a></li>
+									<li class="footermenu_list"><a class="footermenu_link" href="#">Пресс-центр</a></li>
+								</ul>
+							</div><!-- footernavbar END -->
+							<!-- col-sm-12 -->
+							<div class="col-sm-12">
+								<!-- row -->
+								<div class="row">
+									<!-- phones-footer -->
+									<div class="col-xs-12 col-sm-3 phones-footer">
+										<!-- footer_col -->
+										<div class="footer_col">
+											<!-- phone-footer -->
+											<div class="row phone-footer">
+												<div class="col-xs-3 col-sm-3 col-md-3">
+													<p class="contacts_text-footer">тел.:</p>
+												</div>
+												<div class="col-xs-9 col-sm-9 col-md-9">
+													<a href="tel:8 800 900 88 22"  class="contacts_date-footer contacts_date-linkfooter">8 800 900 88 22</a>
+												</div>
+											</div><!-- phone-footer END -->
+											<!-- fax-footer -->
+											<div class="row fax-footer">
+												<div class="col-xs-3 col-sm-3 col-md-3">
+													<p class="contacts_text-footer">факс.:</p>
+												</div>
+												<div class="col-xs-9 col-sm-9 col-md-9">
+													<a href="tel:8 800 900 88 22"  class="contacts_date-footer contacts_date-linkfooter">8 800 900 88 22</a>
+												</div>
+											</div><!-- fax-footer END -->	
+										</div><!-- footer_col END -->
+										<a href="#" class="contacts_link-footer consultation_link">Заявка на консультацию</a>
+									</div><!-- phones-footer END -->
+									<!-- adress-footer -->
+									<div class="col-xs-12 col-sm-4 adress-footer">
+										<!-- footer_col -->
+										<div class="footer_col">
+											<p class="contacts_text-footer"><span class="contacts_date-footer">г. Томск, Кузовлевский тракт 6/2</span></p>
+											<p class="contacts_text-footer">Часы работы:&nbsp&nbsp<span class="contacts_date-footer contacts_date-worktimefooter">Пн-Пт 9-18 ч. | Обед: 13-14</span></p>
+										</div><!-- footer_col END -->
+										<a href="#" class="contacts_link-footer map_link">Посмотреть на карте</a>
+									</div><!-- adress-footer END -->
+									<!-- emails-footer -->
+									<div class="col-xs-12 col-sm-5 emails-footer">
+										<!-- footer_col -->
+										<div class="footer_col">
+											<!-- row -->
+											<div class="row">
+												<div class="col-xs-8 col-sm-7 col-lg-6">
+													<p class="contacts_text-footer">Общие вопросы:</p>
+												</div>
+												<div class="col-xs-4 col-sm-5 col-lg-6 emails_wrap">
+													<a href="mailto:info@ritz.ru" class="contacts_text-footer contacts_date-linkfooter">info@ritz.ru</a>
+												</div>
+											</div><!-- row END -->
+											<!-- row -->
+											<div class="row">
+												<div class="col-xs-8 col-sm-7 col-lg-6">
+													<p class="contacts_text-footer">Коммерческий отдел:</p>
+												</div>
+												<div class="col-xs-4 col-sm-5 col-lg-6 emails_wrap">
+													<a href="mailto:sales@ritz.ru" class="contacts_text-footer contacts_date-linkfooter">sales@ritz.ru</a>
+												</div>
+											</div><!-- row END -->
+											<!-- row -->
+											<div class="row">
+												<div class="col-xs-8 col-sm-7 col-lg-6">
+													<p class="contacts_text-footer">Отдел поставок:</p>
+												</div>
+												<div class="col-xs-4 col-sm-5 col-lg-6 emails_wrap">
+													<a href="mailto:snab@ritz.ru" class="contacts_text-footer contacts_date-linkfooter">snab@ritz.ru</a>
+												</div>
+											</div><!-- row END -->
+										</div><!-- footer_col -->
+										<a href="#" class="contacts_link-footer worktime_link">Часы работы</a>
+									</div><!-- emails-footer END -->
+								</div><!-- row END -->
+							</div><!-- col-sm-12 END -->
+						</div><!-- row END -->
+					</div><!-- footer_body END -->
+				</div><!-- footer_row END -->
+			</div><!-- footer_block END -->
+			<!-- footer_bottom -->
+			<div class="footer_bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-3">
+							<p class="copyright">@ 1988-2017 г. РИТЦ</p>
+						</div>
+						<div class="col-sm-4 col-sm-offset-5">
+							<p class="redline">Сделано по ГОСТу в REDLINE</p>
+						</div>
+					</div>
+				</div>
+			</div><!-- footer_bottom END -->
+		</nav><!-- navbar_footer END -->
+	</footer><!-- footer END -->
+	<!-- Optimized loading JS Start -->
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.min.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+	<!-- Optimized loading JS END -->
+	<!-- Load Custom CSS Compiled without JS Start -->
+	<noscript>
+			<link rel="stylesheet" href="css/fonts.min.css">
+			<link rel="stylesheet" href="css/main.min.css">
+		</noscript>
+		<!-- Load Custom CSS Compiled without JS END -->
+</body>
+</html>
